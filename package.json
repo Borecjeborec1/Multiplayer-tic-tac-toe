@@ -1,0 +1,15 @@
+{
+  "name": "mp-tic-tac-toe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.7",
+    "socket.io": "^3.1.2"
+  }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script defer src="script.js"></script>
+    <style>
+      .circle {
+        background: url('kolecko.png');
+      }
+      .x {
+        background: url('krizek.png');
+      }
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #363636;
+      }
+      #main {
+        width: 602.5px;
+        height: 600px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid #cccccc;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .subDiv {
+        border: 1px solid #cccccc;
+        height: 200px;
+        width: 200px;
+      }
+
+      #win {
+        position: absolute;
+        left: 50%;
+        top: 18%;
+        transform: translate(-50%, 0);
+        color: #cccccc;
+      }
+    </style>
+  </head>
+  <body>
+    <h3 id="win"></h3>
+    <div id="main">
+      <div class="subDiv"></div>
+      <div class="subDiv"></div>
+      <div class="subDiv"></div>
+      <div class="subDiv"></div>
+      <div class="subDiv"></div>
+      <div class="subDiv"></div>
+      <div class="subDiv"></div>
+      <div class="subDiv"></div>
+      <div class="subDiv"></div>
+    </div>
+  </body>
+</html>
